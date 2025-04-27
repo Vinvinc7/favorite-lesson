@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>favorite lesson ❤️</title>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffe6f0, #ffe9e9);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    }
+    .photo-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    }
+    .photo-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .arrow {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: red;
+    animation: bounce 1s infinite;
+    }
+    @keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -20px); }
+    }
+    h1 {
+    color: #ff4d6d;
+    font-size: 26px;
+    text-align: center;
+    margin: 20px 10px 10px;
+    }
+    p {
+    color: #ff6f91;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 30px;
+    max-width: 600px;
+    }
+    .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    }
+    button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    button:hover {
+    background-color: #ff99aa;
+    }
+</style>
+</head>
+<body>
+
+<!-- Musik Romantis -->
+<audio autoplay loop>
+<source src="Musik/NOTIFIKASI PESAN MASUK __ SOUND EFFECK [mxJpeR-Quog].mp3" type="audio/mpeg">
+Browsermu tidak mendukung audio tag.
+</audio>
+
+<div class="photo-container">
+<!-- Ganti src dengan foto target -->
+<img src="Gambar/Wonyoung🐰.jpeg" alt="Foto Target">
+<div class="arrow">📩</div>
+</div>
+
+<h1>Halo, iya kamu...</h1>
+<p>
+Aku tahu kalo aku sering kali merasa egois dan hanya memihak sesaat pada perasaan pribadi tanpa lihat kamu udah bagaimana selama ini, jujur aku bingung harus nanggapin apa soal kamu yang bahas hal yang udah lewat, wajar kalo kamu bahas itu tapi kata "gapapa" dari kamu yang buat aku nyadar "oo, dia gak percaya", sakit kalo kamu ketik kayak gitu. i'm sorry kat, aku kayaknya bakal berhenti di sini, kamu jaga kesehatan dan jangan maksain diri, kamu kalo butuh ruang curhat rpc aku kebuka ya... sorry udah gantung perasaan kamu, maafin aku yang egois dan gak bisa nepatin kata-kata sendiri, website ini aku buat sebagai langkah utama untuk kamu bisa lepas dari aku. di bawah ini ada opsi, kamu bisa pilih sesuai dengan logika, jangan pakai hati ya?
+</p>
+
+<div class="buttons" id="buttons">
+<button onclick="jawab(true)">Bertahan ❤️</button>
+<button onclick="jawab(false)">Lepas tapi baca dulu ❤️ </button>
+</div>
+
+<script>
+function jawab(terima) {
+    const container = document.body;
+    const buttons = document.getElementById('buttons');
+    buttons.style.display = 'none';
+
+    if (terima) {
+    container.innerHTML += `<h1>Kita coba sekali lagi ya, terimakasih udah bertahan ❤️</h1>`;
+    } else {
+    container.innerHTML += `<h1>Gua sayang lu kat, sayang banget, jangan mikir aneh-aneh, gua gak kuat kalo lu harus ngerasain hal-hal buruk kayak gitu ❤️</h1>`;
+    }
+}
+</script>
+
+</body>
+</html>
